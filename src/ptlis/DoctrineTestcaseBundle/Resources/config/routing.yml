@@ -1,0 +1,18 @@
+
+
+hydrated_working:
+    path:       /hydrated_working
+    defaults:   { _controller: ptlisDoctrineTestcaseBundle:Testcase:hydratedWorking }
+
+hydrated_not_working:
+    path:       /hydrated_not_working
+    defaults:   { _controller: ptlisDoctrineTestcaseBundle:Testcase:hydratedNotWorking }
+
+
+non_hydrated_working:
+    path:       /non_hydrated_working
+    defaults:   { _controller: ptlisDoctrineTestcaseBundle:Testcase:nonHydratedWorking }
+
+non_hydrated_not_working:
+    path:       /non_hydrated_not_working
+    defaults:   { _controller: ptlisDoctrineTestcaseBundle:Testcase:nonHydratedNotWorking }

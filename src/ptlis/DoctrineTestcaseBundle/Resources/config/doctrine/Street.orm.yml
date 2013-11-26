@@ -1,0 +1,20 @@
+ptlis\DoctrineTestcaseBundle\Entity\Street:
+    type: entity
+    repositoryClass: ptlis\DoctrineTestcaseBundle\Entity\Repository\Street
+    table: street
+    id:
+        id:
+            type: integer
+            unsigned: true
+            generator: { strategy: AUTO }
+    oneToMany:
+        houses:
+            targetEntity: House
+            mappedBy: street
+            cascade:
+              - persist
+    fields:
+        street_name:
+            type: string
+            length: 100
+            nullable: false

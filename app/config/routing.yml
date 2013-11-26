@@ -1,0 +1,4 @@
+
+
+_demo:
+    resource: "@ptlisDoctrineTestcaseBundle/Resources/config/routing.yml"

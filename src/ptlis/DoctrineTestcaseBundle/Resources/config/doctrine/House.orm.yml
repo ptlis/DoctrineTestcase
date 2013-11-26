@@ -1,0 +1,22 @@
+ptlis\DoctrineTestcaseBundle\Entity\House:
+    type: entity
+    repositoryClass: ptlis\DoctrineTestcaseBundle\Entity\Repository\House
+    table: house
+    id:
+        id:
+            type: integer
+            unsigned: true
+            generator: { strategy: AUTO }
+    manyToOne:
+        street:
+            targetEntity: Street
+            inversedBy: houses
+            joinColumn:
+                name: street_id
+                referencedColumnName: id
+                nullable: false
+    fields:
+        house_name:
+            type: string
+            length: 100
+            nullable: false
